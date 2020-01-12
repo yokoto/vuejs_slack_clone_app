@@ -3,7 +3,7 @@ import 'firebase/auth'  // ログイン機能を使うために読み込み
 import 'firebase/firestore'  // データベース機能を使うために読み込み
 
 // firebaseの準備ができている場合のみに設定する
-if (!firebase.apps) {
+if (!firebase.apps.length) {
   const config = {
     apiKey: "AIzaSyAVwQDKJ3tvk1W_HHfh7-naUsQExCTgvL0",
     authDomain: "vuejs-slack-clone-app.firebaseapp.com",
